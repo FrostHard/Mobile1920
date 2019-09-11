@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Lorem Generator</string>
+    <string name="title_text">Lorem Generator</string>
+    <string name="bintang_kuning">Bintang Kuning</string>
+    <string name="lorem_text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+        \nAliquam eget commodo risus, in maximus est.
+        \nMorbi ac lectus velit.
+        \nMorbi gravida viverra ante sed venenatis.
+        \nSed ac est tristique, malesuada quam id, maximus sem.
+        \nPellentesque malesuada ante non velit ultrices, ac porta diam tempor.
+        \nMorbi eu metus sit amet justo tincidunt ultrices.
+        \nCras tincidunt mollis rhoncus.
+        \nNunc rutrum nisl vitae velit ullamcorper commodo vitae et metus.
+        \nQuisque scelerisque facilisis augue, in blandit ligula vehicula gravida.
+        \nAliquam non venenatis odio, ac molestie nunc.
+        \nPhasellus venenatis, magna sed congue facilisis, mauris erat porta dui, et lacinia massa tellus ut enim.
+        \nNulla facilisi.
+        \nInteger pellentesque nunc lobortis sapien accumsan hendrerit.
+        \nDonec aliquam, ex ut volutpat fringilla, ante nisl egestas nulla, non dictum enim purus ut nunc.
+    </string>
+    <string name="confirm_text">Confirm</string>
+    <string name="creator_fill_placeholder">insert name here</string>
+    <string-array name="listOfLorems">
+        <item>Lorem Ipsum</item>
+        <item>Space Ipsum</item>
+        <item>Corporate Ipsum</item>
+    </string-array>
+</resources>
