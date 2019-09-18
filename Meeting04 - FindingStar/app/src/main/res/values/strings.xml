@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Finding Star</string>
+    <string name="instruction_body">Find the shining star in one of these random blocks!</string>
+</resources>
