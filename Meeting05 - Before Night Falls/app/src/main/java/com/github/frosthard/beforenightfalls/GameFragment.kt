@@ -47,66 +47,103 @@ class GameFragment : Fragment() {
 
                 when (currentScene) {
                     scenes[0] -> {
-                        when (selectedActionId) {
+                        when(selectedActionId) {
                             0 -> currentScene = scenes[1]
                             1 -> currentScene = scenes[14]
                         }
                     }
                     scenes[1] -> {
-                        when (selectedActionId) {
+                        when(selectedActionId) {
                             0 -> currentScene = scenes[2]
                             1 -> currentScene = scenes[13]
                         }
                     }
                     scenes[2] -> {
-                        when (selectedActionId) {
+                        when(selectedActionId) {
                             0 -> currentScene = scenes[3]
                             1 -> currentScene = scenes[12]
                         }
                     }
                     scenes[3] -> {
-                        when (selectedActionId) {
+                        when(selectedActionId) {
                             0 -> currentScene = scenes[4]
                             1 -> currentScene = scenes[9]
                         }
                     }
                     scenes[4] -> {
-                        when (selectedActionId) {
+                        when(selectedActionId) {
                             0 -> currentScene = scenes[5]
                             1 -> currentScene = scenes[6]
                         }
                     }
-
+                    scenes[5] -> {
+                        MyApplication.badEnding1 = true
+                        ending()
+                    }
                     scenes[6] -> {
-                        when (selectedActionId) {
+                        when(selectedActionId) {
                             0 -> currentScene = scenes[7]
-                            1 -> currentScene = scenes[8]
+                            1 -> currentScene = scenes [8]
                         }
+                    }
+                    scenes[7] -> {
+                        MyApplication.badEnding2 = true
+                        ending()
+                    }
+                    scenes[8] -> {
+                        MyApplication.normalEnding = true
+                        ending()
                     }
 
                     scenes[9] -> {
-                        when (selectedActionId) {
+                        when(selectedActionId) {
                             0 -> currentScene = scenes[10]
-                            1 -> currentScene = scenes[11]
+                            1 -> currentScene = scenes [11]
                         }
                     }
 
-                } else {
-                    Toast.makeText(
-                        this.activity,
-                        "Select one of the actions to continue!",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    scenes[10] -> {
+                        MyApplication.badEnding3 = true
+                        ending()
+                    }
+
+                    scenes[11] -> {
+                        MyApplication.goodEnding = true
+                        ending()
+                    }
+
+                    scenes[12] -> {
+                        MyApplication.badEnding4 = true
+                        ending()
+                    }
+
+                    scenes[13] -> {
+                        MyApplication.badEnding5 = true
+                        ending()
+                    }
                 }
+
+                // Disabling options if choice == "" and enabling them if not
+                if (currentScene.actions[0] == "") binding.actionOne.isEnabled = false else binding.actionOne.isEnabled = true
+                if (currentScene.actions[1] == "") binding.actionTwo.isEnabled = false else binding.actionTwo.isEnabled = true
+
+
+                binding.actions.clearCheck()
+                binding.scrollView.fullScroll(ScrollView.FOCUS_UP)
+                binding.invalidateAll()
+            } else {
+                Toast.makeText(this.activity, "Select one of the actions to continue!", Toast.LENGTH_SHORT).show()
             }
-            return binding.root
         }
+        return binding.root
+    }
 
-        private fun ending() {
+    private fun ending() {
 
-            when (selectedActionId) {
-                0 -> this.activity!!.onBackPressed()
-                1 -> currentScene = scenes[0]
-            }
+        when(selectedActionId) {
+            0 -> this.activity!!.onBackPressed()
+            1 -> currentScene = scenes[0]
         }
     }
+
+}
