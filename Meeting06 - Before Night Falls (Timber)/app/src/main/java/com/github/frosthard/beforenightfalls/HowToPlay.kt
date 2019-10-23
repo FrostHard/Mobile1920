@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.github.frosthard.beforenightfalls.databinding.FragmentHowToPlayBinding
+import timber.log.Timber
 
 /**
  * A simple [Fragment] subclass.
