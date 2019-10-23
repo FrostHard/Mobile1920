@@ -133,10 +133,8 @@ class MyApplication: Application() {
 
         // Utils
         lateinit var currentDisplayedEnding: Scene
-    }
 
         var LOG_PREFIX = "[TIMBER LOGGING] -------------> "
-
 
         var ON_CREATE_CALLED = LOG_PREFIX + "onCreate() Called!"
         var ON_START_CALLED = LOG_PREFIX + "onStart() Called!"

@@ -39,6 +39,8 @@ class EndingDisplay : Fragment() {
 
         binding.endingDisplay = this
 
+        Timber.d(MyApplication.ON_CREATE_VIEW_CALLED)
+
         return binding.root
     }
 }
