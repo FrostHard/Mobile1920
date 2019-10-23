@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Before Night Falls</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_title">Before Night Falls</string>
+    <string name="start_button_text">Start</string>
+    <string name="how_to_play">How to play</string>
+    <string name="how_to_play_body">
+        Choose an option in your attempt to survive a night in Minecraft!
+        Choose the right decisions in order to survive nightfall, but avoid
+        doing wrong decisions or you won\'t last the night.
+    </string>
+    <string name="action_button_text">Continue</string>
+    <string name="unlocked_endings">Unlocked Endings</string>
+    <string name="bad_ending1">Rushed into the Cave</string>
+    <string name="bad_ending2">Diamonds on Fire</string>
+    <string name="bad_ending3">Undecided</string>
+    <string name="bad_ending4">Creeper? Aww man.</string>
+    <string name="bad_ending5">Under the Floor, is Lava</string>
+    <string name="bad_ending6">Bad Omen</string>
+    <string name="normal_ending">Take Back the Night</string>
+    <string name="good_ending">Found the Time-Travel Device</string>
+    <string name="title"> Before Night Falls </string>
+    <string name="question">Choose a decision.</string>
+</resources>
