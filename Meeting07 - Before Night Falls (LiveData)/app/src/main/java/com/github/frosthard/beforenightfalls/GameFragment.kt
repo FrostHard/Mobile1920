@@ -32,7 +32,7 @@ class GameFragment : Fragment() {
         currentScene = scenes[0]
 
         // Bind this fragment class to the layout
-        binding.scene = this
+        binding.viewModel = this
 
         // Listener for action button
         binding.actionButton.setOnClickListener {

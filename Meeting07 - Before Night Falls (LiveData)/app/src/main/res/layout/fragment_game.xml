@@ -7,7 +7,7 @@
 
     <data>
         <variable
-            name="scene"
+            name="viewModel"
             type="com.github.frosthard.beforenightfalls.GameFragment" />
     </data>
 
@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="@string/title"
+                android:text="@{viewModel.currentScene.title}"
                 android:layout_marginBottom="@dimen/margin"
                 android:layout_marginTop="@dimen/margin"
                 style="@style/header_one_style" />
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="@{scene.currentScene.body}"
+                android:text="@{viewModel.currentScene.body}"
                 android:layout_marginBottom="@dimen/margin"
                 android:layout_marginStart="@dimen/small_margin"
                 android:layout_marginEnd="@dimen/small_margin"
@@ -64,7 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:text="@{scene.currentScene.actions[0]}"
+                    android:text="@{viewModel.currentScene.actions[0]}"
                     style="@style/normal_text_style"/>
 
                 <RadioButton
@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:text="@{scene.currentScene.actions[1]}"
+                    android:text="@{viewModel.currentScene.actions[1]}"
                     style="@style/normal_text_style"/>
 
 
